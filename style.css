@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+*{
+    margin:5px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    
+}
+/* Define CSS variables (custom properties) for the default (light) theme */
+:root {
+    --background-color: #fff; /* Background color for the light theme */
+    --text-color: #555;       /* Text color for the light theme */
+    --title-color: #000;      /* Title color for the light theme */
+}
+
+/* Define CSS variables (custom properties) for the dark theme */
+.dark-theme {
+    --background-color: #000; /* Background color for the dark theme */
+    --text-color: #999;       /* Text color for the dark theme */
+    --title-color: #fff;      /* Title color for the dark theme */
+}
+
+body{
+    background:var(--background-color);
+    color: var(--text-color)
+
+}
+.header{
+    width:100%;
+    min-height: 100vh;
+    padding:0 8%;
+    position:relative;
+    overflow:hidden;
+
+}
+nav{
+    display:flex;
+    align-items: center;
+    padding:10px 0;
+
+}
+.logo img{
+width: 150px;
+height: 40px;
+
+}
+nav ul{
+    width:100%;
+    text-align:right;
+    list-style:none;
+    margin-right:50px;
+
+}
+nav ul li{
+    display: inline-block;
+    margin:5px 15px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:var(--text-color);
+    font-weight: 500;
+}
+.toggle-btn{
+    background: #3f378d;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height:40px;
+    border-radius: 20px;
+    cursor:pointer;
+}
+.toggle-btn img{
+    width: 20px;
+    margin-left: 10px;
+}
+.content{
+    margin-top:10%;
+    max-width: 600px;
+}
+.content h1{
+    font-size: 80px;
+    font-family: serif;
+    color:var(--title-color);
+    font-weight: 600;
+}
+.content h1 span{
+    font-family: serif;
+    font-weight:400;
+    font-style: italic;
+
+}
+
+.content a{
+    background:#6c69f0;
+    color:#fff;
+    padding:15px 70px;
+    border-radius:30px;
+    cursor:pointer;
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+}
+.image-box{
+    position:absolute;
+    bottom:0;
+    right:10%;
+}
